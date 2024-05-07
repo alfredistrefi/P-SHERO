@@ -65,6 +65,9 @@ html, body{
     padding: 0;
 }
 
+.arrowDropDown{
+  display: none;
+}
 
 
 
@@ -376,6 +379,7 @@ slider */
   align-items: center;
 
 }
+
 .card h1{
   font-size: 24px;
   margin-bottom: 6px;
@@ -676,7 +680,8 @@ width: 100%;
 .footer{
   display: flex;
   flex-direction: row;
-  margin-top: 90px;
+  margin-top: 130px;
+  margin-bottom: 90px;
 }
 
 .hugsection{
@@ -723,8 +728,8 @@ width: 100%;
   width: 341px;
   height: 33px;
   background-color: white;
-  border-color: #B7926A;
-  border-width: 0.5;
+  border-color: #000000;
+  border-width: 1px;
   margin-bottom: 29px;
   font-size: 14px;
   font-family: 'Lora', serif;
@@ -748,12 +753,14 @@ width: 100%;
   font-weight: 300;
   line-height: 17.6px;
   color: #B7926A;
+  text-transform: uppercase;
 }
 
 
 .simpletitle{
   color: #B7926A;
   font-size: 14px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .details{
@@ -816,6 +823,10 @@ width: 100%;
 .mobileicons{
   display: none;
 }
+
+.dropdownarrow{
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .footer{
     display: flex;
@@ -838,14 +849,26 @@ width: 100%;
 
   }
 
-  .cstitle{
+  .cstitle {
     padding-bottom: 28px;
     padding-top: 28px;
-    color: #000000;
-    font-size: 15px;
-    display: block; /* or inline-block */
+    font-size: 14.88px;
+    display: flex; /* Ensures content is in line */
+/* Aligns the content to the right */
+    align-items: center; /* Centers the arrow vertically */
+    width: 100%; /* Ensures the div takes full width of its container */
     border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+    text-transform: none;
+    justify-content: space-between;
+}
 
+.dropdownarrow {
+   display: flex;
+    margin-left: 10px; /* Adds space if needed between elements, can adjust */
+    height: 30px; /* Adjusts the height of the arrow to match your design */
+    width: auto; /* Keeps the aspect ratio of the image */
+    justify-content: flex-end; 
 }
 
 .mobileicons{
@@ -1156,7 +1179,18 @@ width: 100%;
 
 
 }
-
+@media only screen and (min-width: 1440px) and (max-width: 1685px) {
+  .footer{
+    background-color: red;
+  }
+  .hugsection{
+    background-color: blue;
+   
+  }
+  .linem{
+    width: 10px;
+  }
+}
 
 /* **************************** **************************** ALL MOBILE STYLES******************************************************** **************************** **************************** **************************** **************************** **************************** /*/
 
