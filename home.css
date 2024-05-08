@@ -56,6 +56,15 @@
     font-weight: 700;
     src: url('path/to/Lora-Bold.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Cormorant';
+    src: url('path/to/cormorant-font.woff2') format('woff2'), /* Modern Browsers */
+         url('path/to/cormorant-font.woff') format('woff');   /* Older Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
   
   body {
     font-family: 'Lora', serif;
@@ -259,7 +268,7 @@ html, body{
   top: clamp(54.5%, 55%, 59%);
   left: 14.4%;
   color: white;
-  font-weight: 400;
+  font-weight: 100;
   font-size: clamp(15px, 2.1vw, 26.5px); /* Using 2.5vw as fallback for font size */
   transform: translateX(-20.5%);
 }
@@ -443,6 +452,9 @@ slider */
 }
 
 
+.eapps-instagram-feed-posts-grid-load-more-container {
+  display: none !important;
+}
 
 
 /* 
@@ -461,6 +473,7 @@ Product Components */
 .side-product-title{
   width: 220px;
   height: 130px;
+  background-color: rgb(255, 255, 255);
   left: 111px  ;
   font-size: 40px;
   line-height: 51.2px;
@@ -472,22 +485,29 @@ Product Components */
 .Product-Shop-bttn{
   background-color: white;
   border-width: 0.5px;
+  border-radius: 0;
   border-color: #B7926A;
-  color: black;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #B7926A;
+  color: #202020;
   font-size: 24px;
   height: 75px;
-  width: 328px;
+  width: 315px;
   border-radius: 2px;
+  font-weight: 500;
 }
 .product-paragraph{
   width: 341px;
-  height: 99px;
+  height: 90px;
   top: 1252px;
   left: 111px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26.82px;
+  background-color: rgb(255, 255, 255);
+   color: #858080;
+  
 
 }
 
@@ -539,6 +559,7 @@ width: 100%;
 .price{
   display: flex;
   flex-direction: row;
+  align-items: center;
 
 
 }
@@ -546,10 +567,14 @@ width: 100%;
 .current{
   margin-right: 15px;
   color: #B7926A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 .oldprice{
   color: #B0B0B0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 
@@ -560,8 +585,7 @@ width: 100%;
 .follow-section {
   display: flex;
   justify-content: space-between;
-  margin-left: 111px;
-  margin-right: 27px;
+  margin-left: 131px;
   margin-top: 150px;
   background-color: rgb(255, 255, 255);
 }
@@ -573,7 +597,7 @@ width: 100%;
   padding: 20px;
   margin-top: 20px;
   margin-right: -8px;
-  background-color: rgb(255, 255, 255);
+
 }
 
 
@@ -583,9 +607,9 @@ width: 100%;
     font-size: clamp(9px, 12px, 26px); 
     background-color: rgb(255, 255, 255);
     width: clamp(100px, 350px, 100%);
-    height: 30px;
+    height: 75px;
+    margin-bottom: -10px;
     color: #858080;
-    margin-bottom: 10px;
     margin-left: -20px;
     
   
@@ -595,8 +619,8 @@ width: 100%;
 
 .elfsight-widget-container {
   flex: 1; /* Takes up remaining space */
-  margin-left: -19cm;
-  margin-right: 59px;
+  margin-left: -21cm;
+  margin-right: 34px;
   display: flex; /* Ensures internal items are aligned */
   justify-content: center; /* Centers the widget horizontally */
   align-items: center; /* Centers the widget vertically */
@@ -604,7 +628,7 @@ width: 100%;
 
 
 .follow-ViewAllButton{
-  width: 125px;
+  width: 135px;
     height: 28px;
     border-width: 1px;
     font-size: 12px;
@@ -614,13 +638,18 @@ width: 100%;
     background-color: white;
     margin-left: -20px;
     margin-bottom: 29px;
+    border-radius: 0;
+    border-color: #B7926A;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #B7926A;
+    
 }
 
 
 
 .sidetfollowitle{
   width: 220px;
-  height: 80px;
+  height: 78px;
   left: 111px;
   font-size: 40px;
   line-height: 51.2px;
@@ -636,22 +665,25 @@ width: 100%;
   left: 111px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26.82px;
-  color: #000000;
+  color: #858080;
 
 
 
 }
 .follow-ViewAllButton{
   background-color: white;
-  border-width: 0.5px;
   border-color: #B7926A;
-  color: black;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #B7926A;
+  border-color: #B7926A;
+  color: #202020;
   font-size: 24px;
   height: 75px;
-  width: 328px;
+  width: 315px;
   border-radius: 2px;
+  font-weight: 500;
 }
 
 /* location */
@@ -707,28 +739,31 @@ width: 100%;
   font-size: 22px;
   height: 26px;
   margin-bottom: 22px;
+  font-weight: 400;
+  font-family: 'Cormorant', serif;
 }
 .boldtitle{
   font-family: 'Lora', serif;
-  font-weight: bold;
+ font-weight: 600;
   font-size: 16px;
+
 }
 .btitle{
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-
-
   font-weight: 400;
+  line-height: 17.07px;
 }
 
 .email{
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 17px;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .line{
-  border: 1px solid #000000;
+  border: 0.5px solid #000000;
   width: 341px;
   margin-bottom: 24px;
 }
@@ -741,7 +776,7 @@ width: 100%;
   border-width: 1px;
   margin-bottom: 29px;
   font-size: 14px;
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -763,6 +798,7 @@ width: 100%;
   line-height: 17.6px;
   color: #B7926A;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -788,7 +824,7 @@ width: 100%;
   margin-bottom: 24px;
 }
 .fline{
-  border: 0.5px solid #B7926A;
+  border: 1px solid #B7926A;
   width: 100%;
   margin-top: 113px;
 }
@@ -884,6 +920,9 @@ width: 100%;
     color: #000000;
     text-transform: none;
     justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 25.38px;
 }
 
 .dropdownarrow {
@@ -1272,6 +1311,10 @@ width: 100%;
   display: flex;
   
   }
+
+  .cardbr{
+    display: none;
+  }
   
 
   /* SEARCHBAR ACTIVE */
@@ -1491,13 +1534,14 @@ padding-top: 22px;
   .ViewAllButton-slider{
     border-radius: 0px;
     border-color: #B7926A;
-    color: #000000;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     width: 123px;
     height: 28px;
-    border-width: 1px;
-    font-weight: 100;
+    border: 0.5px solid #B7926A;
+    font-weight: 400;
   }
+  
   .carousel-arrows{
     display: none;
   }
@@ -1544,9 +1588,12 @@ width: 100%;
    .card{
     width: 100%;
     margin-bottom: 14px;
+    padding-bottom: 5px;
+    background-color: #F9F9F9;
    }
    .card1{
     width: 100%;
+    background-color: #F9F9F9;
    
    }
    .img-container img{
@@ -1557,47 +1604,55 @@ width: 100%;
    .card h1{
     font-size: 14px;
     margin-top: 25px;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     font-weight: 500;
     color: #20293A;
-    height: 31px;
+    height: 20px;
+    font-family: 'Lora', serif;
     margin-left: 15px;
   }
   .card p{
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
-    line-height: 1.5em;
     color: #202020;
     position: relative;
     margin-left: 15px;
-    margin-bottom: 22px;
-
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
   }
 
   .card1 h1{
+    font-family: 'Lora', serif;
     font-size: 14px;
     margin-top: 25px;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     font-weight: 500;
     color: #20293A;
-    height: 31px;
+    height: 20px;
     margin-left: 15px;
   }
   .card1 p{
     font-size: 12px;
-    font-weight: 300;
-    height: 109px;
+    font-weight: 400;
     margin: 0;
-    line-height: 1.5em;
     color: #202020;
     position: relative;
     margin-left: 15px;
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
   }
 
   .learn{
-    margin-bottom: 24px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #B7926A;
+    font-size: 13px;
+    font-weight: 500;
   }
+
 
 /* PRODUCTS IN MOBILE VIEW */
 
@@ -1619,7 +1674,7 @@ width: 100%;
     font-size: 24px;
     background-color: rgb(255, 255, 255);
     height: 31px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     margin-left: -20px;
     font-family: 'Lora', serif;
   }
@@ -1630,7 +1685,7 @@ width: 100%;
     font-size: clamp(9px, 12px, 26px); 
     background-color: rgb(255, 255, 255);
     width: clamp(100px, 350px, 100%);
-    height: 30px;
+    height: 18px;
     color: #858080;
     margin-bottom: 10px;
     margin-left: -20px;
@@ -1653,6 +1708,11 @@ width: 100%;
     background-color: white;
     margin-left: -20px;
     margin-bottom: 29px;
+    border-radius: 0px;
+    border-color: #B7926A;
+    font-family: 'Montserrat', sans-serif;
+    border: 0.5px solid #B7926A;
+
 
   }
 
@@ -1753,7 +1813,7 @@ height: 355px;
   font-size: 24px;
   background-color: rgb(255, 255, 255);
   height: 31px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   margin-left: -20px;
   font-family: 'Lora', serif;
 
@@ -1762,31 +1822,33 @@ height: 355px;
 
 
 .follow-parargrap{
-  line-height: 17px;
-  font-size: 12px;
-  font-size: clamp(9px, 12px, 26px); 
-  background-color: rgb(255, 255, 255);
-  width: clamp(100px, 490px, 100%);
-  height: 30px;
-  color: #858080;
-  margin-bottom: 10px;
+ line-height: 17px;
+    font-size: 12px;
+    font-size: clamp(9px, 12px, 26px); 
+    background-color: rgb(255, 255, 255);
+   width: 350px;
+    height: 30px;
+    color: #858080;
+    margin-bottom: 1px;
   margin-left: -20px;
-  
-
 }
 
 .follow-ViewAllButton{
   width: 125px;
   height: 28px;
-  border-width: 1px;
-  font-size: 12px;
-  font-weight: 400;
+  border-radius: 0px;
   border-color: #B7926A;
-  border-radius: 0;
-  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border: 0.5px solid #B7926A;
+  font-weight: 400;
+  
   margin-left: -20px;
   margin-bottom: 29px;
 }
+
+
+
 .follow-side {
   flex: 1;
   padding: 20px;
@@ -2203,6 +2265,7 @@ padding-bottom: 5px;
     top: clamp(9cm, 9cm + 1vw, 12cm);
     margin-left: clamp(20px, 20px + 1vw, 100vw);
     top: clamp(10cm, 10.5cm + 1vw, 100%);
+    font-weight: 500;
   }
   .para {
     color: #ffffff;
@@ -2211,6 +2274,7 @@ padding-bottom: 5px;
     top: clamp(12cm, 12cm + 1vw, 15cm);
     margin-left: clamp(0px, 0px + 1vw, 100vw);
     top: clamp(8cm, 13.4cm + 1vw, 100%);
+    
   }
   .hero-section {
     background-color: rebeccapurple;
@@ -2228,20 +2292,25 @@ padding-bottom: 5px;
     width: 100vw; 
   }
   .button1 {
-    width: clamp(310px, 310px + 1vw, 100%);
-    height: 54px;
-    font-size: clamp(16px, 16px + 1vw, 100%);
+    width: clamp(310px, 290px + 1vw, 100%);
+    height: 50px;
+    font-size: 22px;
     background-color: #b7926a;
     margin-left: clamp(13px, 13px + 1vw, 100%);
-    top: clamp(15cm, 15.4cm + 1vw, 100%);
+    top: clamp(15cm, 15.5cm + 1vw, 100%);
+    font-family: 'Montserrat', sans-serif;
+font-weight: 500;
   }
   .button {
-    width: clamp(310px, 310px + 1vw, 100%);
-    height: 54px;
-    font-size: clamp(12px, 12px + 1vw, 100%);
+    width: clamp(310px, 290px + 1vw, 100%);
+    height: 50px;
+    font-size: 22px;
     background-color: white;
     margin-left: clamp(13px, 13px + 1vw, 100%);
     top: clamp(16cm, 17.1cm + 1vw, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
   }
 }
 

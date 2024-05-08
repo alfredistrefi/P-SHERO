@@ -10,8 +10,8 @@ const originalImage1Src = image1.src;
 const originalImage2Src = image2.src;
 
 // New image sources
-const newImage1Src = '/images/follow6.png';
-const newImage2Src = '/images/follow5.png';
+const newImage1Src = './images/follow6.png';
+const newImage2Src = './images/follow5.png';
 
 // Function to toggle between original and new images
 function toggleImages() {
