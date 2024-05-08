@@ -696,10 +696,12 @@ width: 100%;
  margin-bottom: 113px;
 }
 
-.imageloc{
+.imageloc {
   width: 788px;
   height: 540px;
+  object-fit: cover;
 }
+
 .maps{
   width: 773px;
   height: 540px;
@@ -1753,15 +1755,19 @@ width: 100%;
   .imagelocation{
     margin: 0;
     width: 100%;
+    margin-bottom: -5px;
   }
   .map-container{
     margin: 0;
     width: 100%;
   }
-  .imageloc{
+  .imageloc {
     width: 100%;
-height: 355px;
-  }
+    max-height: 100%;
+    height: 365px;
+    object-fit: cover;
+
+}
   .maps{
     width: 100%;
     height: 355px;
@@ -3169,10 +3175,12 @@ width: 100%;
           margin: 0;
           width: 100%;
         }
-        .imageloc{
+        .imageloc {
           width: 100%;
-      height: 555px;
-        }
+          height: 555px;
+          object-fit: cover;
+      }
+      
         .maps{
           width: 100%;
           height: 555px;
