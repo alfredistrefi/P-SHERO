@@ -327,7 +327,7 @@ slider */
   display: flex;
   align-items: center;
   margin-right: 90px;
-  transition: transform 0.5s ease;
+
 }
 
 .image2{
@@ -2152,7 +2152,7 @@ padding-bottom: 5px;
 .titles{
   font-size: clamp(14px, 17px, 18px);
   text-align: left;
- }
+}
 .nav-items{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2160,10 +2160,9 @@ padding-bottom: 5px;
 
 .ulist{
   text-align: left;
-
 }
 .ulist ul{
-  margin-right: 10px;
+  margin-right: -20px;
 
 }
 .icons{
