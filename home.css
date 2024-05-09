@@ -1,28 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
-
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: url('path/to/Montserrat-Regular.ttf') format('truetype');
   }
-  
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     src: url('path/to/Montserrat-Medium.ttf') format('truetype');
   }
-  
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     src: url('path/to/Montserrat-SemiBold.ttf') format('truetype');
   }
-  
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -35,28 +31,24 @@
     font-weight: 400;
     src: url('path/to/Lora-Regular.ttf') format('truetype');
   }
-  
   @font-face {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 500;
     src: url('path/to/Lora-Medium.ttf') format('truetype');
-  }
-  
+  } 
   @font-face {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
     src: url('path/to/Lora-SemiBold.ttf') format('truetype');
   }
-  
   @font-face {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
     src: url('path/to/Lora-Bold.ttf') format('truetype');
   }
-
   @font-face {
     font-family: 'Cormorant';
     src: url('path/to/cormorant-font.woff2') format('woff2'), /* Modern Browsers */
@@ -115,7 +107,10 @@ html, body{
 }
 
 .titles{
-   font-weight: 100;
+  margin-top: 5px;
+   font-weight: 400;
+   font-family: 'Cormorant', serif;
+   line-height: 21.8px;
 }
 
 .titles{
@@ -332,7 +327,7 @@ slider */
   display: flex;
   align-items: center;
   margin-right: 90px;
-
+  transition: transform 0.5s ease;
 }
 
 .image2{
@@ -454,9 +449,6 @@ slider */
 }
 
 
-.eapps-instagram-feed-posts-grid-load-more-container {
-  display: none !important;
-}
 
 
 /* 
@@ -592,6 +584,9 @@ width: 100%;
   background-color: rgb(255, 255, 255);
 }
 
+.eapps-instagram-feed-posts-grid-load-more-container {
+  display: none !important;
+}
 
 
 .follow-side {
@@ -599,7 +594,7 @@ width: 100%;
   padding: 20px;
   margin-top: 20px;
   margin-right: -8px;
-
+background-color: rgb(255, 255, 255);
 }
 
 
@@ -621,7 +616,7 @@ width: 100%;
 
 .elfsight-widget-container {
   flex: 1; /* Takes up remaining space */
-  margin-left: -21cm;
+  margin-left: -16.2cm;
   margin-right: 34px;
   display: flex; /* Ensures internal items are aligned */
   justify-content: center; /* Centers the widget horizontally */
@@ -739,7 +734,7 @@ width: 100%;
   margin-right: 154px;
 }
 .storelogo{
-  font-family: 'Lora', serif;
+
   font-size: 22px;
   height: 26px;
   margin-bottom: 22px;
@@ -811,6 +806,7 @@ width: 100%;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 .details{
   font-size: 14px;
@@ -1208,6 +1204,7 @@ width: 100%;
   color: #B7926A;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 .details{
   font-size: 14px;
@@ -2154,13 +2151,20 @@ padding-bottom: 5px;
 }
 .titles{
   font-size: clamp(14px, 17px, 18px);
-}
+  text-align: left;
+ }
 .nav-items{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.ulist{
+  text-align: left;
+
+}
 .ulist ul{
-  margin-right: -20px;
+  margin-right: 10px;
+
 }
 .icons{
   margin-left: -40px;
@@ -2617,57 +2621,42 @@ width: 100%;
 }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1999px) {
-  .image-holder {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: center;
-    max-width: 100%; 
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .follow-section{
+   background-color: rgb(255, 255, 255);
+   margin-right: 50px;
+  }
+.follow-side{
+  background-color: rgb(255, 255, 255);
+  margin-right: -9cm;
 }
-  .image {
-    flex: 0 0 30%; /* Two columns */
-    max-width: 100%;
-    
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 1px; /* Add some spacing between images */
-    margin-bottom: -5px;
-}
-
-.image img {
-  max-width: 100%; 
-  max-height: 100%;
-}
+.elfsight-widget-container {
+  flex: 1; /* Takes up remaining space */
+  display: flex; /* Ensures internal items are aligned */
+background-color: rgb(255, 255, 255);
 
 }
-@media only screen and (min-width: 2000px) and (max-width: 2874px) {
+  
+}
+@media only screen and (min-width: 1921px) and (max-width: 2874px) {
   .follow-section{
     margin-left: 10.3cm;
     margin-right: 10cm;
   }
-  .image-holder {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px 1px;
-    width: 100%;
-    height: 800px;
-    margin-right: 10cm;
-    margin-left: 20px;
-    background-color: rgb(255, 255, 255);
-  }
-  .image {
-    flex: 0 0 25%; /* Two columns */
-    max-width: 100%;
-    margin: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-bottom: -5px;
-}
 
-.image img{
-  width: 370px;
-  height:370px;
+  .follow-section{
+    background-color: rgb(255, 255, 255);
+    margin-right: 50px;
+   }
+ .follow-side{
+   background-color: rgb(255, 255, 255);
  }
+  .elfsight-widget-container {
+    flex: 1; /* Takes up remaining space */
+    display: flex; /* Ensures internal items are aligned */
+  background-color: rgb(255, 255, 255);
+  
+  }
 }
 
 
