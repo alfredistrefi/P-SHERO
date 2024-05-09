@@ -594,7 +594,7 @@ width: 100%;
   padding: 20px;
   margin-top: 20px;
   margin-right: -8px;
-background-color: rgb(255, 255, 255);
+background-color: rgb(144, 22, 22);
 }
 
 
@@ -2620,24 +2620,29 @@ width: 100%;
 }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-  .follow-section{
-   background-color: rgb(255, 255, 255);
-   margin-right: 50px;
+@media only screen and (min-width: 1440px) and (max-width: 1921px) {
+  .follow-section {
+    background-color: rgb(255, 255, 255);
+    margin-right: 48px;
   }
-.follow-side{
-  background-color: rgb(255, 255, 255);
-  margin-right: -9cm;
-}
-.elfsight-widget-container {
-  flex: 1; /* Takes up remaining space */
-  display: flex; /* Ensures internal items are aligned */
-background-color: rgb(255, 255, 255);
 
+  .follow-side {
+    background-color: rgb(255, 255, 255);
+  max-width: 980px;
+
+  }
+
+  .elfsight-widget-container {
+    /* Align items horizontally and vertically centered */
+
+    justify-content: center;
+    display: flex;
+    flex: 1; /* Takes up remaining space */
+    background-color: rgb(255, 255, 255);
+  }
 }
-  
-}
-@media only screen and (min-width: 1921px) and (max-width: 2874px) {
+
+@media only screen and (min-width: 2000px) and (max-width: 2874px) {
   .follow-section{
     margin-left: 10.3cm;
     margin-right: 10cm;
