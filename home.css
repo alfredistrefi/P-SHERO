@@ -73,6 +73,8 @@ html, body{
 
 
 
+
+
 .navcon {
   background-color: rgb(255, 255, 255);
   height: 130px;
@@ -90,7 +92,7 @@ html, body{
     margin-right: 57px;
     margin-left: 57px;
     margin-top: 27px;
-    position: fixed;
+    position: relative;
 }
 
 .mobile-logo{
@@ -98,12 +100,14 @@ html, body{
 }
 
 .nav-items{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 5px;
-    text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+
+
 }
 
 .titles{
@@ -111,25 +115,30 @@ html, body{
    font-weight: 400;
    font-family: 'Cormorant', serif;
    line-height: 21.8px;
+   font-size: clamp(14px, 18px, 18px);
+   width: 25%;
+   text-align: left;
+
 }
 
-.titles{
-  font-size: clamp(14px, 13px, 18px);
-  width: 25%;
-}
 
 .ulist{
   justify-content: center;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 99px;
+ 
 }
-.ulist ul{
-  width: 100px;
-  font-size: clamp(14px, 17px, 18px);
-  margin-left: -0.5cm;
+.ulist ul {
+  font-size: clamp(14px, 15vw, 16px); /* Using viewport width for font size */
+  justify-content: space-between;
+  line-height: clamp(20px, 2vw, 23.04px); /* Using viewport width for line height */
+  color: #222529;
+ 
 }
+
+
+
 /* search bxo */
 
 .searchicon {
@@ -163,7 +172,6 @@ html, body{
   position: static;
   display: flex;
   align-items: center;
-  margin-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -459,15 +467,25 @@ Product Components */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 111px;
+  margin-left: 93px;
   margin-right: 20px;
   margin-top: 113px;
+  background-color: rgb(255, 255, 255);
+}
+
+.side-product {
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 34px;
+
+height: 307px;
+
+
 }
 
 .side-product-title{
   width: 220px;
-  height: 130px;
-  background-color: rgb(255, 255, 255);
+  height: 122px;
   left: 111px  ;
   font-size: 40px;
   line-height: 51.2px;
@@ -476,6 +494,19 @@ Product Components */
 
 }
 
+.product-paragraph{
+  width: 341px;
+  height: 90px;
+  left: 111px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26.82px;
+  background-color: rgb(255, 255, 255);
+   color: #858080;
+ 
+
+}
 .Product-Shop-bttn{
   background-color: white;
   border-width: 0.5px;
@@ -485,25 +516,13 @@ Product Components */
   border: 1px solid #B7926A;
   color: #202020;
   font-size: 24px;
+  margin-top: -5px;
   height: 75px;
   width: 315px;
   border-radius: 2px;
   font-weight: 500;
 }
-.product-paragraph{
-  width: 341px;
-  height: 90px;
-  top: 1252px;
-  left: 111px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 26.82px;
-  background-color: rgb(255, 255, 255);
-   color: #858080;
-  
 
-}
 
 .Product-Shop{
   background-color: white;
@@ -515,12 +534,7 @@ Product Components */
   width: 328px;
   border-radius: 2px;
 }
-.side-product {
-  padding: 20px;
-  margin-top: 30px;
-  margin-right: 34px;
 
-}
 
 
 .slider-product-Image {
@@ -579,7 +593,8 @@ width: 100%;
 .follow-section {
   display: flex;
   justify-content: space-between;
-  margin-left: 131px;
+  margin-left: 105px;
+  margin-right: 93px;
   margin-top: 150px;
   background-color: rgb(255, 255, 255);
 }
@@ -594,7 +609,7 @@ width: 100%;
   padding: 20px;
   margin-top: 20px;
   margin-right: -8px;
-background-color: rgb(144, 22, 22);
+background-color: rgb(255, 255, 255);
 }
 
 
@@ -906,10 +921,13 @@ background-color: rgb(144, 22, 22);
     border-color: #000000;
 
 
+
+
   }
 
   .cstitle {
     padding-bottom: 28px;
+    height: 1px;
     padding-top: 28px;
     font-size: 14.88px;
     display: flex; /* Ensures content is in line */
@@ -923,6 +941,8 @@ background-color: rgb(144, 22, 22);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 25.38px;
+    margin-left: 4px;
+    margin-right: 6px;
 }
 
 .dropdownarrow {
@@ -935,6 +955,7 @@ background-color: rgb(144, 22, 22);
 
 .mobileicons{
   display: flex;
+  margin-top: 30px;
 }
 
   .simpletitle{
@@ -964,6 +985,8 @@ background-color: rgb(144, 22, 22);
     height: 27px;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16.88px;
   }
   .br{
     display: none;
@@ -972,12 +995,13 @@ background-color: rgb(144, 22, 22);
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     font-family: "Cormorant", serif;
+    font-size: 14px;
+    font-weight: 400;
   }
   .email{
     background-color: rgb(255, 255, 255);
-    margin-top: 90px;
-    height: 47px;
-    font-weight: 400px;
+    margin-top: 60px;
+    font-weight: 400;
     font-family: inter;
     font-size: 14.3px;
     line-height: 21.56px;
@@ -988,6 +1012,8 @@ background-color: rgb(144, 22, 22);
   .buttonsignup{
     width: 25px;
     font-family:   'Montserrat', sans-serif;
+    height: 48px;
+    font-size: 13.34px;
   }
   .childsection{
     display: none;
@@ -996,6 +1022,9 @@ background-color: rgb(144, 22, 22);
    width: 100%;
    color: #B7926A;
    border-color: #B7926A;
+   margin-bottom: 30px;
+   margin-top: 33px;
+   background-color: red;
   }
   .linem{
     display: none;
@@ -1024,7 +1053,7 @@ background-color: rgb(144, 22, 22);
     
   }
   .rights{
-    margin: 24px;
+    margin: 26px;
     font-family:   'Montserrat', sans-serif;
     font-size: 14px;
     color: #B0B0B0;
@@ -1260,10 +1289,10 @@ background-color: rgb(144, 22, 22);
 }
 @media only screen and (min-width: 1440px) and (max-width: 1685px) {
   .footer{
-    background-color: red;
+  
   }
   .hugsection{
-    background-color: blue;
+  
    
   }
   .linem{
@@ -1662,6 +1691,7 @@ width: 100%;
     flex-direction: column;
     margin: 24px;
     background-color: #ffffff;
+    margin-bottom: -20px;
     
   }
   .side-product{
@@ -1781,7 +1811,8 @@ width: 100%;
     margin-right: 24px;
     margin-left: 24px;
   }
-  
+
+
   .image-holder {
     margin: 0;
     display: grid;
@@ -1808,9 +1839,9 @@ width: 100%;
   
 .follow-side{
   height: 158px;
-  background-color: rgb(255, 255, 255);
   margin: 0;
   margin-right: 24px;
+  margin-bottom: -14.5px;
 }
 
 .sidetfollowitle{
@@ -1838,20 +1869,38 @@ width: 100%;
   margin-left: -20px;
 }
 
+
 .follow-ViewAllButton{
   width: 125px;
   height: 28px;
   border-radius: 0px;
-  border-color: #B7926A;
+  border-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   border: 0.5px solid #B7926A;
   font-weight: 400;
   
   margin-left: -20px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
+
 }
 
+.eapps-instagram-feed-header-inner{
+  display: none;
+}
+
+.eapps-instagram-feed-header{
+  display: none;
+}
+
+
+.es-header{
+  display: none;
+} 
+
+.eapps-instagram-feed-header-small{
+  display: none;
+}
 
 
 .follow-side {
@@ -1859,6 +1908,7 @@ width: 100%;
   padding: 20px;
   margin-top: 20px;
   margin-right: 34px;
+  background-color: white;
 }
 
 
@@ -2142,36 +2192,64 @@ padding-bottom: 5px;
 
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 2874px) {
+ @media only screen and (min-width: 1789px) and (max-width: 2874px) {
 .navbar{
-  margin-left: 95px;
-  margin-right: 95px;
-  height: 80px;
-  position: relative;
+background-color:  #D3D8DC;
+padding: 0;
 }
+
+.nav-items{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
 .titles{
-  font-size: clamp(14px, 17px, 18px);
+  margin-top: 5px;
+  font-weight: 400;
+  font-family: 'Cormorant', serif;
+  line-height: 21.8px;
+  font-size: clamp(14px, 18px, 18px);
+  width: 25%;
   text-align: left;
 }
-.nav-items{
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+.titles ul{
+  text-align: left;
+  margin-left: -0.5cm;
+}
+
+.searchbar{
+  width: 356px;
+  margin-left: 150px;
+  height: 41px;
 }
 
 .ulist{
-  text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
 }
 .ulist ul{
-  margin-right: -20px;
+  font-size: clamp(14px, 17px, 18px);
+  justify-content: space-between;
+  line-height: 23.04px;
+  margin-right: 20px;
+  color: #222529;
+}
+
+.icons{
+margin-right: 0px;
+margin-left: -20px;
+
 
 }
-.icons{
-  margin-left: -40px;
-}
-.searchbar{
-  margin-left: 4cm;
-}
-}
+} 
 
 /* HERO SCREEN TABLET AND DESKTOP */
 /* Styles for Tablets */
@@ -2438,6 +2516,7 @@ width: 100%;
   .side {
     background-color: rgb(255, 255, 255);
     max-width: 30%;
+    margin-top: 30px;
   }
   .sliderImage {
     width: 100%;
@@ -2839,7 +2918,7 @@ width: 100%;
     display: flex;
     flex-direction: row;
     margin: 0;
-    margin-left:129px;
+    margin-left: 102px;
     margin-right: 102px;
 
   }
