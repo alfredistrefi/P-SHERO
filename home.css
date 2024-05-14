@@ -743,6 +743,8 @@ background-color: rgb(255, 255, 255);
   flex-direction: row;
   margin-top: 128px;
   margin-bottom: 90px;
+  margin-right: 130px;
+
 }
 
 .brfooter{
@@ -845,7 +847,7 @@ background-color: rgb(255, 255, 255);
 }
 .linecs{
   border: 1px solid #B7926A;
-  width: 241px;
+  width: 271px;
   margin-bottom: 24px;
 }
 .fline{
@@ -1306,7 +1308,7 @@ background-color: rgb(255, 255, 255);
    
   }
   .linem{
-    width: 10px;
+    width: 200px;
   }
 }
 
